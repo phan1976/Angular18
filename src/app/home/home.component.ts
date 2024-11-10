@@ -11,6 +11,7 @@ export class HomeComponent {
   public resetName(): void {
     // console.log("resetName");
     this.name = "";
+    this.age = 0;
   }
 
 }
