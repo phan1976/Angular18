@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   public name:string = "Phan Van Thanh";
+  public age = 16;
+  public resetName(): void {
+    // console.log("resetName");
+    this.name = "";
+  }
 
 }

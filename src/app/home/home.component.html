@@ -1,4 +1,4 @@
-<div class="shadow">
+<!-- <div class="shadow">
     <h1>day la component Home</h1>
     <h2>chao ban {{name}}</h2>
     <input value="{{name}}"/>
@@ -6,5 +6,20 @@
     <input [value]="name" [title]="'Day la ' + name"/>
     <br/>
     <input [value]="name" title="Day la {{name}}"/>
+
+</div>
+<div class="shadow">
+    <h1 *ngIf="age > 18">Ban qua gia roi</h1>
+    <h2 *ngIf="age < 18">Ban con tre qua</h2>
+    
+
+</div> -->
+<div class="shadow">
+    <input type="text" value="{{name}}"/>
+    <br>
+    <input type="text" [(ngModel)]="name"/>
+    <h1>chao ban {{name}}</h1>
+    <button (click)="resetName()">Reset Name</button>
+    
 
 </div>
