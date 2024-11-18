@@ -1,1 +1,12 @@
 <p>about component works!</p>
+<div class="shadow">
+    <h2>Tinh</h2>
+    <select (change)="changeCity($event)">
+        <option *ngFor="let item of vietnamCities" value="{{item.city}}">{{item.city}}</option>
+    </select>
+    <h2>Thanh pho</h2>
+    <select>
+        <option *ngFor="let district of myDistricts" value="{{district}}">{{district}}</option>
+    </select>
+
+</div>
