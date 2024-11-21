@@ -8,6 +8,7 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 
+const routes: Routes[{path:'data', components: 'Data'}];
 
 export class AppRoutingModule {
   
