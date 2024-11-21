@@ -8,6 +8,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveForm2Component } from './reactive-form2/reactive-form2.component';
 import { ReactiveForm3Component } from './reactive-form3/reactive-form3.component';
 import { ReactiveForm4Component } from './reactive-form4/reactive-form4.component';
+import { GetDataComponent } from './get-data/get-data.component';
+import { MeinDataComponent } from './mein-data/mein-data.component';
 
 const routes: Routes = [{path:'about',component:AboutComponent},
   {path:'home', component:HomeComponent},
@@ -16,6 +18,8 @@ const routes: Routes = [{path:'about',component:AboutComponent},
   {path:'reactiveForm2', component:ReactiveForm2Component},
   {path:'reactiveForm3', component:ReactiveForm3Component},
   {path:'reactiveForm4', component:ReactiveForm4Component},
+  {path:'getdata', component:GetDataComponent},
+  {path:'meindata', component:MeinDataComponent},
   {path:'', component:HomeComponent},
   {path:'notfound',component:PageNotFoundComponent},
   {path:'**',component:PageNotFoundComponent}
