@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class HttpServerService {
   private REST_API_CONTENTS = 'http://localhost:3000';
   private httpOptions = {
-    headers: new HttpHeader({
+    headers: new HttpHeaders({
         'Content-Type':'application/json'
     })
   }
