@@ -10,6 +10,8 @@ import { ReactiveForm3Component } from './reactive-form3/reactive-form3.componen
 import { ReactiveForm4Component } from './reactive-form4/reactive-form4.component';
 import { GetDataComponent } from './get-data/get-data.component';
 import { MeinDataComponent } from './mein-data/mein-data.component';
+import { MeinData2Component } from './mein-data2/mein-data2.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 const routes: Routes = [{path:'about',component:AboutComponent},
   {path:'home', component:HomeComponent},
@@ -20,6 +22,8 @@ const routes: Routes = [{path:'about',component:AboutComponent},
   {path:'reactiveForm4', component:ReactiveForm4Component},
   {path:'getdata', component:GetDataComponent},
   {path:'meindata', component:MeinDataComponent},
+  {path:'meindata2', component:MeinData2Component},
+  {path:'postdata', component:PostDataComponent},
   {path:'', component:HomeComponent},
   {path:'notfound',component:PageNotFoundComponent},
   {path:'**',component:PageNotFoundComponent}
