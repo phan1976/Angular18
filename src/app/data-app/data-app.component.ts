@@ -22,9 +22,9 @@ export class DataAppComponent {
       console.log('getComments =', data);
     });
 
-    this.httpServerService.getRandomUsers(5).subscribe((data) => {
-      console.log('getRandomUsers =', data);
-    });
+    // this.httpServerService.getRandomUsers(5).subscribe((data) => {
+    //   console.log('getRandomUsers =', data);
+    // });
   }
 
 }

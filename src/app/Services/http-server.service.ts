@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+//import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -37,12 +38,13 @@ export class HttpServerService {
 
   public getComments(): Observable<any> {
     const url = `${this.REST_API_SERVER}/commands`;
+    console.log('mein url', url);
     return this.httpClient.get<any>(url, this.httpOptions);
   }
-  public getRandomUsers(users: number): Observable<any> {
-    const url = `${this.REST_API_SERVER_RANDOM_USERS}` + users;
-    console.log(url);
-    return this.httpClient.get<any>(url, this.httpOptions);
-  }
+  // public getRandomUsers(users: number): Observable<any> {
+  //   const url = `${this.REST_API_SERVER_RANDOM_USERS}` + users;
+  //   console.log(url);
+  //   return this.httpClient.get<any>(url, this.httpOptions);
+  // }
   
 }
