@@ -7,10 +7,12 @@ import { HttpServerService } from '../Services/http-server.service';
   styleUrls: ['./data-app.component.scss']
 })
 export class DataAppComponent {
+
   constructor(private httpServer: HttpServerService){}
+
   public ngOnInit(){
     this.httpServer.getComment().subscribe(data => {
-      console.log('comments = ', data)
+      console.log('get Comment = ', data)
     });
   }
 

@@ -4,7 +4,8 @@ import { DataAppComponent } from './data-app/data-app.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [{path:'data', component: DataAppComponent},
-  {path:'', component: HomeComponent}
+  {path:'', component: HomeComponent},
+  {path:'home', component: HomeComponent}
 ];
 
 @NgModule({
