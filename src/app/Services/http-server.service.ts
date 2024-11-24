@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpServerService {
+  
   private REST_API_COMMENTS = 'http://localhost:3000';
+  
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
