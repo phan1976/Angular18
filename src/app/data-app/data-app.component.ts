@@ -8,10 +8,10 @@ import { HttpServerService } from '../Services/http-server.service';
 })
 export class DataAppComponent {
 
-  //constructor(private httpServer: HttpServerService){}
+  // constructor(private httpServer: HttpServerService){}
 
   // public ngOnInit(){
-  //   this.httpServer.getComment().subscribe(data => {
+  //   this.httpServer.getComments().subscribe(data => {
   //     console.log('get Comment = ', data)
   //   });
   // }
