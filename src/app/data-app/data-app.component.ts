@@ -15,5 +15,16 @@ export class DataAppComponent {
   //     console.log('get Comment = ', data)
   //   });
   // }
+  constructor(private httpServerService: HttpServerService){};
+  
+  public ngOnInit():void {
+    this.httpServerService.getComments().subscribe((data) => {
+      console.log('getComments =', data);
+    });
+
+    this.httpServerService.getRandomUsers(5).subscribe((data) => {
+      console.log('getRandomUsers =', data);
+    });
+  }
 
 }
