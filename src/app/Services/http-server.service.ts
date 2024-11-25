@@ -37,7 +37,7 @@ export class HttpServerService {
   constructor(private httpClient: HttpClient) { }
 
   public getComments(): Observable<any> {
-    const url = `${this.REST_API_SERVER}/commands`;
+    const url = `${this.REST_API_SERVER}/comments`;
     console.log('mein url', url);
     return this.httpClient.get<any>(url, this.httpOptions);
   }
