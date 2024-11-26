@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChaComponent } from './cha/cha.component';
+import { ConComponent } from './con/con.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChaComponent
+    ChaComponent,
+    ConComponent
   ],
   imports: [
     BrowserModule,
