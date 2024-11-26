@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ChaComponent {
 
+  public chaoCon(name: string){
+    console.log('chao con '+ name);
+  }
 }

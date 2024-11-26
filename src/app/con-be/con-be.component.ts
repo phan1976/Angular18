@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-con-be',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./con-be.component.scss']
 })
 export class ConBeComponent {
+  //public name = '';
+  @Input() name: string = '';
+  @Output() traloi: EventEmitter<any> = new EventEmitter();
+
+  public chaoCha(){
+    console.log('chao cha con la ', this.name);
+    this.traloi.emit(this.name);
+  }
 
 }
