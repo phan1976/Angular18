@@ -15,4 +15,8 @@ export class ConBeComponent {
     this.traloi.emit(this.name);
   }
 
+  public xinTien(amounte: number){
+    console.log('Cam on Ba da cho con ' + this.name + ' ' + amounte + ' euro');
+  }
+
 }

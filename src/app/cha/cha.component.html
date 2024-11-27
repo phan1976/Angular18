@@ -1,3 +1,5 @@
 <p>cha works!</p>
-<app-con-be name="viet" (traloi)="chaoCon($event)"></app-con-be>
-<app-con-be name="nam" (traloi)="chaoCon($event)"></app-con-be>
+<app-con-be #thangviet name="viet" (traloi)="chaoCon($event)"></app-con-be>
+<app-con-be #thangnam name="nam" (traloi)="chaoCon($event)"></app-con-be>
+<br>
+<button (click)="choTien()">Cho Tien Con</button>
